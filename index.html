@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Primeros pasos en html basandome en la página de Steam">
+    <meta name="keywords" content="juegos, colección, perfil, hardware">
+    <meta name="author" content="Adrián Muñoz">
+    <link rel="icon" href="assets/imgs/icon.jpg" type="image/x-icon">
+    <title>Prometeo Games</title>
+</head>
+<body>
+    <header>
+        <h1>Prometeo Games</h1>
+        <img src="assets/imgs/icon.jpg" alt="logotipo Prometeo Games" style="height: 128px;">
+        <nav>
+            <ul>
+                <li><a href="#Perfil">Perfil</a></li>
+                <li><a href="#Colección">Colección</a></li>
+                <li><a href="#Juegos">Juegos</a></li>
+                <li><a href="#Hardware">Hardware</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="Perfil">
+            <h2>Perfil</h2>
+            <figure><img src="assets/imgs/power.jpeg" alt="foto de perfil" style="height: 64px;"><h3>xX_ThePower_Xx</h3></figure>
+            <p>10 años de puro <em>rendimiento</em></p>
+        </section>
+        <section id="Colección">
+            <h2>Colección</h2>
+            <dl>
+                <dt><strong>Informatica y telecomunicaciones</strong></dt>
+                <dd>Desarrollo de Aplicaciones Multiplataforma (DAM)<br>
+
+                    Desarrollo de Aplicaciones Web  (DAW)<br>
+                    
+                    Administración de Sistemas Informáticos en Red </dd>
+                <dt><strong>Marketing y Comercio</strong></dt>
+                <dd>Marketing y Publicidad<br>
+
+                    Comercio Internacional<br>
+                    
+                    Transporte y Logística</dd>
+                <dt><strong>Administración y Gestión</strong></dt>
+                <dd>Administración y Finanzas</dd>
+                <dt><strong>Avanzadas</strong></dt>
+                <dd>FP Cyber<br>
+
+                    FP Data<br>
+                    
+                    FP Developer<br>
+                    
+                    FP Supply</dd>
+            </dl>
+        </section>
+        <section id="Juegos">
+            <h2>Juegos</h2>
+            <dl>
+                <dt><img src="assets/imgs/gdt.jpg" alt="Juego1" style="height: 128px;"></dt>
+                <dd>Game Dev Tycoon(0 referencia)</dd>
+                <dt><img src="assets/imgs/frstpnk.png" alt="juego2" style="height: 128px;"></dt>
+                <dd>FrostPunk</dd>
+                <dt><img src="assets/imgs/Doom.png" alt="juego3" style="height: 128px;"></dt>
+                <dd>Doom</dd>
+                <dt><img src="assets/imgs/tboi.jpeg" alt="juego4" style="height: 128px;"></dt>
+                <dd>The Binding Of Isaac</dd>
+            </dl>
+        </section>
+        <section id="Hardware">
+            <h2>Hardware</h2>
+            <ul>
+                <li>PC</li>
+                <li>SteamDeck</li>
+                <li>Rog Ally Z1</li>
+                <li>Xbox Series S</li>
+                <li>Raspberry PI</li>
+            </ul>
+        </section>
+        <section id="formulario">
+            <h2>Rellena este formulario con tus datos y preferencias</h2>
+            <form action="#" method="POST">
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Tu email" required>
+                <label for="genre">Juego favorito:</label>
+                <select id="genre" name="genre" required>
+                    <option value="">~~Selecciona Juego~~</option>
+                    <option value="action">Game Dev Tycoon</option>
+                    <option value="comedy">FrostPunk</option>
+                    <option value="drama">Doom</option>
+                    <option value="horror">The Binding Of Isaac</option>
+                </select>
+                <label for="subject">Asunto del mensaje/comentario:</label><br>
+                <input type="text" id="subject" name="subject" placeholder="Escribe el asunto del mensaje o comentario." required>
+                <label for="comments">Comentarios:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="40" placeholder="Comparte tu opinion."></textarea>
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <section id="contact">
+            <h2>Contacto</h2>
+            <address>
+                <p>Prometeo Games</p>
+                <p>Av. de los Rosales, 17</p>
+                <p>Usera, 28041 Madrid</p>
+                <p>Email: contact@prometeogames.com</p>
+            </address>
+        </section>
+        <p>&copy; 2025 Prometeo Games. All rights reserved.</p>
+    </footer>
+</body>
+</html>
